@@ -130,7 +130,7 @@ $(document).ready(function() {
             rules: {
                 name: {
                     required: true,
-                    minlength: 5
+                    minlength: 2
                 },
                 content: {
                     required: true,
@@ -145,7 +145,7 @@ $(document).ready(function() {
             messages: {
                 name: {
                     required: 'Vui lòng nhập tên của bạn.',
-                    minlength: 'Tên phải lớn hơn 5 ký tự.',
+                    minlength: 'Tên phải lớn hơn 2 ký tự.',
                 },
                 content: {
                     required: 'Vui lòng nhập lời chúc.',
@@ -157,9 +157,10 @@ $(document).ready(function() {
             },
 
             submitHandler: function (form) {
+                let valText = $(form).find("input[name='name']").val().replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;")+'</strong><p>'+$(form).find("textarea[name='content']").val().replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
                 $("#loader").css("display", "inline-block");
                 $('.wish-box').scrollTop(0);
-                $('.wish-box').prepend('<div class="wish-box-item bg"><strong>'+$(form).find("input[name='name']").val().replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;")+'</strong><p>'+$(form).find("textarea[name='content']").val().replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;")+'</p></div>');
+                $('.wish-box').prepend('<div class="wish-box-item bg"><strong>'+valText+'</p></div>');
                 $( "#success").html("Gửi lời chúc thành công").slideDown( "slow" );
                 setTimeout(function() {
                 $( "#success").slideUp( "slow" );
@@ -204,6 +205,8 @@ $(document).ready(function() {
 		$('#boxedResult').hide();
 		$('#fullscreenloading').hide();
 	});
+
+
 
 
 	/*==============================

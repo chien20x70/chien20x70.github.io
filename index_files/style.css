@@ -204,6 +204,21 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
 	border:10px solid #f9667e;
 }
 
+.color-white{
+	color: white;
+}
+
+.bg-pink{
+	background-color: #F9667E;
+}
+
+.bg-images{
+	background:url('./images/Back.jpg') no-repeat;
+	@media only screen and (max-width: 431px) {
+		background:url('./images/Back_mobile.jpg') no-repeat;
+	}
+}
+
 /*Section General*/
 section{
 	padding:120px 0px;
@@ -303,6 +318,11 @@ section#home{
 	color: #fff;
 	display: flex;
 	align-items: center;
+
+	@media only screen and (max-width: 431px) {
+		height: 430px;
+		background-size: unset!important;
+	}
 }
 section#home:before{
 	content: "";
