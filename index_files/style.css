@@ -228,7 +228,12 @@ section.img-bg{
 	/*background-attachment:fixed!important;*/
 	background-size:cover!important;
 	color:#FFF;
-	background-position:center!important;
+	/* background-position:center!important; */
+	background-position-y: -200px !important;
+	@media only screen and (max-width: 431px) {
+		background-position:top!important;
+	}
+	
 }
 section.img-bg:before{
 	content: "";
@@ -727,8 +732,23 @@ section#frase i{
 .mfp-bg {
     background: #fff;
 }
+
+a.mfp-image{
+	overflow: hidden;
+}
+
+a.mfp-image image{
+	max-width: 100%;
+	height: auto;
+	transition: transform 0.5s ease-in-out;
+}
+
+a.mfp-image image:hover{
+	transform: scale(1.2);
+}
+
 a.mfp-image:hover{
-	opacity: 0.7;
+	/* opacity: 0.7; */
 }
 .mfp-bottom-bar {
     margin-top: -27px;

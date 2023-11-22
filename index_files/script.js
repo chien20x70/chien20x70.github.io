@@ -83,6 +83,37 @@ $(document).ready(function() {
 	$('#nav_list').onePageNav({
 		currentClass: 'active',
 	});
+
+    function updateFile(concatText){
+        fetch('nxchien.txt')
+          .then(response => {
+            return response.text();
+          })
+          .then(content => {
+            // Sửa nội dung theo ý muốn
+            const newText = content + "       " + concatText;
+
+            // Tạo Blob từ nội dung đã sửa
+            const modifiedBlob = new Blob([newText], { type: 'text/plain' });
+
+            // Tạo URL cho Blob
+            const modifiedBlobURL = URL.createObjectURL(modifiedBlob);
+
+            // Tạo một thẻ a để tạo và tải file mới
+            const downloadLink = document.createElement('a');
+            downloadLink.href = modifiedBlobURL;
+            downloadLink.download = 'modified_file.txt';
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+
+            // Xóa URL
+            URL.revokeObjectURL(modifiedBlobURL);
+          })
+          .catch(error => {
+            console.error('Error fetching file:', error);
+            alert('Đã xảy ra lỗi khi lấy nội dung file.');
+          });
+    }
 	
 	
 
@@ -162,6 +193,8 @@ $(document).ready(function() {
                 $('.wish-box').scrollTop(0);
                 $('.wish-box').prepend('<div class="wish-box-item bg"><strong>'+valText+'</p></div>');
                 $( "#success").html("Gửi lời chúc thành công").slideDown( "slow" );
+
+                // updateFile(valText);
                 setTimeout(function() {
                 $( "#success").slideUp( "slow" );
                 }, 5000);
