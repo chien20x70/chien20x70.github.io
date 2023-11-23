@@ -108,6 +108,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
 	margin:0px auto 70px auto;
 	text-align:center;
 }
+
+#wishes .title-block{
+	margin: unset !important;
+}
 .title-block .divider{
 	border-bottom:solid 2px #f9667e;
 	width:56px;
@@ -221,7 +225,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
 
 /*Section General*/
 section{
-	padding:120px 0px;
+	/* padding: 60px 0px; */
+}
+#couple{
+	padding: 60px 0px;
 }
 section.img-bg{
 	position: relative;
@@ -456,13 +463,22 @@ ul.names li{
 /* ==================================================================
 	4. Section - Couple
 ================================================================== */
+.profile{
+	overflow: hidden;
+}
 .profile img{
 	width: 100%;
 	max-width: 350px;
 	margin:30px auto;
 	box-shadow: 0 0 10px rgb(0 0 0 / 16%);
 	padding: 5px;
+	transition: 1s ease-in-out;
 }
+
+.profile img:hover{
+	transform: scale(1.1);
+}
+
 .social-icons{
 	margin: 27px auto;
 }
@@ -995,8 +1011,8 @@ a.mfp-image .img-responsive:hover{
 }
 
 
-#whenwhere{
-	padding: 120px 0;
+#whenwhere, #counter, #frase, #gallery, #featured-people{
+	padding: 60px 0;
 }
 .location-grids .grid-item{
 	box-shadow: 0 0 10px rgb(0 0 0 / 15%);
@@ -1123,6 +1139,10 @@ section#footer .circle {
 section#footer .copyright {
 	margin-top:40px;
 }
+
+section#wishes{
+	padding: unset !important;
+}
 /* ==================================================================
 	14. Responsive
 ================================================================== */
@@ -1213,6 +1233,7 @@ section#footer .copyright {
 		line-height: 1.2em;
 	    top: 0px;
 	}
+	
 }
 .wish-box{overflow-y: auto;height: 390px;background-color: rgb(255 255 255 / 70%);margin: 0.5rem 0;border: 5px solid #f23b43;color: #333;}
 .wish-box::-webkit-scrollbar {width: 8px;}
