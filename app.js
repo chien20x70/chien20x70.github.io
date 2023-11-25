@@ -11,7 +11,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('home',
+particlesJS('slide',
   
   {
     "particles": {
@@ -258,10 +258,10 @@ particlesJS('wishes',
   {
     "particles": {
       "number": {
-        "value": 1000,
+        "value": 500,
         "density": {
           "enable": true,
-          "value_area": 700
+          "value_area": 800
         }
       },
       "color": {
