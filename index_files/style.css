@@ -242,18 +242,13 @@ section.img-bg{
 	}
 	
 }
-section.img-bg-tks{
+section#wishes{
+	padding: unset !important;
+	height: 690px;
 	position: relative;
-	/*background-attachment:fixed!important;*/
-	background-size:cover!important;
-	color:#FFF;
-	/* background-position:center!important; */
-	background-position-y: -200px !important;
-	background: url('./images/14.jpg') no-repeat;
-	@media only screen and (max-width: 431px) {
-		background-position:top!important;
-	}
+	overflow: hidden;
 }
+
 section.img-bg:before{
 	content: "";
     background-color: rgba(0, 0, 0, 0.3);
@@ -1238,10 +1233,7 @@ section#footer .copyright {
 	margin-top:40px;
 }
 
-section#wishes{
-	padding: unset !important;
-	height: 500px;
-}
+
 /* ==================================================================
 	14. Responsive
 ================================================================== */
