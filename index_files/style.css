@@ -242,6 +242,18 @@ section.img-bg{
 	}
 	
 }
+section.img-bg-tks{
+	position: relative;
+	/*background-attachment:fixed!important;*/
+	background-size:cover!important;
+	color:#FFF;
+	/* background-position:center!important; */
+	background-position-y: -200px !important;
+	background: url('./images/14.jpg') no-repeat;
+	@media only screen and (max-width: 431px) {
+		background-position:top!important;
+	}
+}
 section.img-bg:before{
 	content: "";
     background-color: rgba(0, 0, 0, 0.3);
