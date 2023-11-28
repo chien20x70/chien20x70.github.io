@@ -223,6 +223,18 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
 	}
 }
 
+#counter, #frase{
+	position: relative;
+}
+
+.counter-img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
 /*Section General*/
 section{
 	/* padding: 60px 0px; */
