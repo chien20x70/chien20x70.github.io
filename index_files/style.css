@@ -429,9 +429,9 @@ section.img-bg-5{
 }
 
 .wave-rage{
-	position: fixed;
-	bottom: 70px;
-	left: 95px;
+	position: absolute;
+	bottom: 0;
+	left: 40px;
 	width: 200px;
 	height: 40px;
 	z-index: 99999;
@@ -440,10 +440,7 @@ section.img-bg-5{
 	justify-content: center;
 	align-items: center;
 	@media (max-width: 799px) {
-		.wave-rage{
-			bottom: 30px;
-			left: 60px;
-		}
+		width: 120px;
 	}
 }
 
@@ -454,6 +451,11 @@ section.img-bg-5{
 	margin: 5px;
 	animation: wave 1s infinite linear;
 	border-radius: 4px;
+	@media (max-width: 799px) {
+		bottom: 30px;
+		left: 60px;
+		margin: 3px;
+	}
 }
 
 .wave-rage .wave:nth-child(2){
