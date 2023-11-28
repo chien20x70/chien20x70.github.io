@@ -428,6 +428,72 @@ section.img-bg-5{
 	object-position: top;
 }
 
+.wave-rage{
+	position: fixed;
+	bottom: 70px;
+	left: 95px;
+	width: 200px;
+	height: 40px;
+	z-index: 99999;
+	background-color: transparent;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	@media (max-width: 799px) {
+		.wave-rage{
+			bottom: 30px;
+			left: 60px;
+		}
+	}
+}
+
+.wave-rage .wave{
+	width: 5px;
+	height: 35px;
+	background-color: #f9667e;
+	margin: 5px;
+	animation: wave 1s infinite linear;
+	border-radius: 4px;
+}
+
+.wave-rage .wave:nth-child(2){
+	animation-delay: 0.1s;
+}
+
+.wave-rage .wave:nth-child(3){
+	animation-delay: 0.2s;
+}
+.wave-rage .wave:nth-child(4){
+	animation-delay: 0.3s;
+}
+.wave-rage .wave:nth-child(5){
+	animation-delay: 0.4s;
+}
+.wave-rage .wave:nth-child(6){
+	animation-delay: 0.5s;
+}
+.wave-rage .wave:nth-child(7){
+	animation-delay: 0.6s;
+}
+.wave-rage .wave:nth-child(8){
+	animation-delay: 0.7s;
+}
+.wave-rage .wave:nth-child(9){
+	animation-delay: 0.8s;
+}
+
+@keyframes wave {
+	0%{
+		transform: scale(0);
+	}
+	50%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0);
+	}
+}
+
 
 /* ==================================================================
 	2. Navigation
