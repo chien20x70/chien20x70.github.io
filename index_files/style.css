@@ -256,6 +256,8 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
 
 	@media (max-width: 799px) {
 		margin-top: 40px;
+		background-position-x: unset;
+		background-position-y: 70px;
 	}
 
 }
@@ -363,13 +365,13 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
 }
 
 .seperator.seperator-up {
-    top: -1px;
+    top: -2px;
     bottom: inherit;
     transform: rotate(180deg)
 }
 
 .black-overlay-se {
-    background: linear-gradient(50deg, #000000 50%, #ffff0000);
+    background: linear-gradient(50deg, #f9667e 50%, #ffff0000);
     opacity: .8;
     width: 100%;
     height: 100%;
@@ -1253,10 +1255,21 @@ a.mfp-image .img-responsive:hover{
 .featured img{
 	margin:0px;
 	float:right;
-	width:240px;
-	height: 240px;
+	width:200px;
+	height: 200px;
 	border:10px solid #FFF!important;
 	margin-left:10px;
+}
+
+.header-donate{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 2rem;
+}
+
+.donate-card{
+	font-size: 16px;
+	margin: 10px 0!important;
 }
 .featured .social-icons a{
 	width: 30px;
@@ -1607,6 +1620,10 @@ section#footer .copyright {
 	#slider, #slider-counter, #frase{
 		height: 500px;
 		padding: 0 !important;
+	}
+
+	#wishes{
+		height: 500px !important;
 	}
 
 	#whenwhere{
