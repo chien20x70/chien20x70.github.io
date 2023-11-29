@@ -293,7 +293,19 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
 
 .quote-counter {
     position: relative;
-    padding-left: 120px
+    padding-left: 120px;
+}
+
+.quote-counter-active{
+	animation: move-right 1s;
+  	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	transition: 1s all ease;
+}
+
+@keyframes move-right {
+	from {right: -300px;}
+  	to {right: 0px;}
 }
 
 .quote-counter p {
