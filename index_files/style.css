@@ -696,6 +696,10 @@ section.img-bg-5{
 }
 
 
+.bg-same-pink{
+	background-color: #f6f1f3 !important;
+}
+
 /* ==================================================================
 	2. Navigation
 ================================================================== */
@@ -722,7 +726,7 @@ section.img-bg-5{
 	padding: 20px 0px;
 }
 .navbar-default {
-    background-color: #FFF;
+    background-color: #f6f1f3;
     border:0px;
 }
 .nav > li a{
