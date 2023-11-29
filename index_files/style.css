@@ -256,7 +256,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
 
 	@media (max-width: 799px) {
 		margin-top: 40px;
-		background-position-x: unset;
+		background-position-x: -60px;
 		background-position-y: 70px;
 	}
 
@@ -272,6 +272,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
     background: #fff;
     z-index: 1;
     transform: skewX(-20deg);
+}
+
+.the-quote .container {
+	height: 270px;
 }
 
 .quote-titles {
@@ -325,7 +329,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
     top: -40px;
     width: 270px;
     height: 270px;
-    background-image: url(../images/rsvp/f1.png);
+    background-image: url('./images/f1.png');
     background-size: 100%;
     background-repeat: no-repeat;
     transform: rotate(140deg)
