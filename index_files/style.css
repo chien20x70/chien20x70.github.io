@@ -223,6 +223,13 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
 	}
 }
 
+.font-vibe{
+	font-family: 'Great Vibes', cursive;
+}
+.font-bellota{
+	font-family: 'Bellota Text', sans-serif !important;
+}
+
 #counter, #frase{
 	position: relative;
 }
@@ -338,7 +345,7 @@ section.img-bg-5{
 
 .dots{
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	color: white;
 	left: 0;
 	width: 100%;
@@ -494,6 +501,14 @@ section.img-bg-5{
 	100%{
 		transform: scale(0);
 	}
+}
+
+.seperator{
+	position: absolute;
+	z-index: 10;
+	bottom: -30px;
+	width: 100vw;
+	height: fit-content;
 }
 
 
